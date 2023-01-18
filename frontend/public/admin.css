@@ -1,0 +1,336 @@
+/* --- start of CSS reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+}
+
+button,
+a {
+    cursor: pointer;
+    color: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+button,
+textarea {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    border-radius: 0;
+}
+
+/* --- end of CSS reset --- */
+body {
+    min-width: 1400px;
+    overflow: scroll;
+}
+
+#root {
+    width: 100%;
+    min-width: 1540px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: #d2454b;
+    padding-top: 100px;
+}
+
+.c-menu {
+    grid-row: 2;
+    grid-column: 1/3;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 25px;
+    -webkit-padding-after: 20px;
+    padding-block-end: 20px;
+}
+
+.pizza {
+    width: 310px;
+    height: 480px;
+    background-color: #d9d9d9;
+    font-family: "Kalam", cursive;
+    color: #463926;
+    font-size: 16px;
+    line-height: 1.2;
+    padding-inline: 20px;
+    padding-block: 10px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.1));
+}
+
+.pizza h2 {
+    font-size: 40px;
+}
+
+.pizza h3 {
+    padding-block: 10px;
+}
+
+.pizza h5 {
+    font-size: 22px;
+}
+
+.pizza hr {
+    border: #463926 solid 1px;
+    margin-block: 8px;
+}
+
+.pizza-pics {
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.pizza img {
+    width: 100%;
+    line-height: 0.8;
+    display: block;
+}
+
+.pizza label {
+    font-size: 20px;
+}
+
+.pizza input {
+    width: 66px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: white;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.pizza-admin {
+    width: 270px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.id-text {
+    background-color: #463926;
+    color: #d9d9d9;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.add-pizza-form {
+    width: 410px;
+    max-height: 90%;
+    overflow: scroll;
+    height: fit-content;
+    padding-left: 40px;
+    max-width: 1520px;
+    background-color: #736759;
+    position: fixed;
+    right: 60px;
+    top: 15px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: "Kalam", cursive;
+    font-size: 18px;
+    border-radius: 10px;
+    filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, 0.8));
+    z-index: 1;
+}
+
+.add-pizza-form h1 {
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    font-family: "Kalam", cursive;
+    line-height: 1.2;
+}
+
+select {
+    height: 30px;
+    background-color: rgba(244, 164, 96, 0.7098039216);
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 22px;
+    margin-block: 5px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    cursor: pointer;
+}
+
+input {
+    height: 30px;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 22px;
+    margin-block: 10px;
+}
+
+textarea {
+    height: 30px;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    padding-inline: 10px;
+    font-size: 22px;
+    margin-block: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1520px;
+    height: auto;
+    background-color: #cbaa8b;
+    border: solid 11px #d9d9d9;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+}
+
+hr {
+    border: white 2px solid;
+    margin-block: 10px;
+}
+
+button {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: #463926;
+    border-radius: 10px;
+    font-family: "Kalam", cursive;
+    font-style: bold;
+    font-size: 20px;
+    text-align: center;
+    padding-inline: 20px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #ae6909;
+    transition: 0.1s ease-in;
+}
+
+.send-btn {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: #463926;
+    border-radius: 10px;
+    font-family: "Kalam", cursive;
+    color: white;
+    font-style: bold;
+    font-size: 20px;
+    text-align: center;
+    padding-inline: 20px;
+    margin-bottom: 10px;
+}
+
+.send-btn:hover {
+    background-color: #ae6909;
+    transition: 0.1s ease-in;
+}
+
+.del-pizza {
+    background-color: rgba(255, 0, 0, 0.6784313725);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 20px;
+    padding-inline: 20px;
+}
+
+.del-pizza:hover {
+    background-color: #ff0000;
+    transition: 0.1s ease-in;
+}
+
+#pizza-id {
+    width: 20%;
+}
+
+#ingredients {
+    width: 100%;
+    height: 100px;
+    font-size: 18px;
+}
+
+#price {
+    width: 40%;
+}
+
+#name {
+    width: 100%;
+}
+
+#select-pizza-id {
+    width: 20%;
+}
+
+.select-pizza {
+    width: 78%;
+}
+
+.pizz-id {
+    display: none;
+}
+
+.status {
+    display: flex;
+    width: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(70, 57, 38, 0.4470588235);
+    border-radius: 10px;
+    padding: 5px;
+    padding-inline: 10px;
+    margin-bottom: 10px;
+}
+
+.status h1 {
+    font-size: 20px;
+}
+
+#myFiles {
+    width: 100%;
+    padding: 0;
+    color: #463926;
+} /*# sourceMappingURL=admin.css.map */

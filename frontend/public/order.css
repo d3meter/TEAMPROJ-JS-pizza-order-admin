@@ -1,0 +1,235 @@
+/* --- start of CSS reset --- */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+}
+
+button,
+a {
+    cursor: pointer;
+    color: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+button,
+textarea,
+select {
+    appearance: none !important;
+    border-radius: 0;
+}
+
+/* --- end of CSS reset --- */
+
+body {
+    min-width: 800px;
+    min-height: 100vh;
+    overflow: scroll;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    min-width: 1300px;
+}
+
+#root {
+    width: 100%;
+    min-height: 100vh;
+    min-width: inherit;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background: #cbaa8b89;
+    min-width: 1300px;
+}
+
+#time {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    margin-bottom: 20px;
+    background-color: #00000082;
+    border-radius: 20px;
+    min-width: inherit;
+}
+
+.container {
+    width: 100%;
+    min-height: 30px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    min-width: inherit;
+}
+
+hr {
+    border: solid 8px transparent;
+}
+
+#order {
+    min-height: 100px;
+    width: 100%;
+    background-color: rgb(150, 127, 105);
+    font-size: 18px;
+    text-align: start;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+#title {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    display: flex;
+    gap: 200px;
+    width: 100%;
+    height: fit-content;
+    justify-content: start;
+    align-content: center;
+    background-color: #463926;
+    padding: 8px;
+    padding-inline: 20px;
+}
+
+.title h1 {
+    padding-inline-start: 10px;
+}
+
+#statusForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    font-size: 30px;
+}
+
+select {
+    background-color: gainsboro;
+    color: rgb(63, 63, 63);
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    border-radius: 7px;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+#refresh-btn {
+    background: yellow url(img/refresh.png) no-repeat center;
+    filter: opacity(0.6);
+    background-size: 70px;
+    color: rgb(63, 63, 63);
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    border: solid 3px black;
+    font-size: x-large;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#refresh-btn:hover {
+    background: rgb(255, 166, 0) url(img/refresh.png) no-repeat center;
+    background-size: 75px;
+    transition: 0.1s ease-in;
+    rotate: 120deg;
+    filter: drop-shadow(0px 0px 10px black);
+}
+
+#backtotop-btn {
+    background: yellow url(img/arrow2.png) no-repeat center;
+    rotate: -90deg;
+    filter: opacity(0.6);
+    background-size: 70px;
+    color: rgb(63, 63, 63);
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    border: solid 3px black;
+    font-size: x-large;
+    position: fixed;
+    bottom: 20px;
+    right: 140px;
+}
+
+#backtotop-btn:hover {
+    background: rgb(255, 166, 0) url(img/arrow2.png) no-repeat right;
+    background-size: 80px;
+    transition: 0.1s ease-in;
+    filter: drop-shadow(0px 0px 10px black);
+}
+
+#filterStatus {
+    background: yellow;
+    background-size: auto;
+    filter: opacity(0.6);
+    background-size: 70px;
+    color: rgb(63, 63, 63);
+    width: 130px;
+    height: 80px;
+    text-align: center;
+    border-radius: 40px;
+    border: solid 3px black;
+    font-size: x-large;
+    position: fixed;
+    bottom: 30px;
+    right: 260px;
+    cursor: pointer;
+}
+
+#filterStatus:hover {
+    background: rgb(255, 166, 0);
+    transition: 0.1s ease-in;
+    filter: drop-shadow(0px 0px 10px black);
+}
+
+.customer-details {
+    grid-column: 1 / 2;
+    grid-row: 2;
+    font-size: 18px;
+    padding-inline: 35px;
+    padding-block: 12px;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+.order-details {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    height: fit-content;
+    padding-inline: 35px;
+    padding-block: 12px;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+    flex-flow: row wrap;
+    gap: 100px;
+    row-gap: 6px;
+}

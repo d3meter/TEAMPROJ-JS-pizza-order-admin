@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/style.css" />
+    <script src="public/script.js" defer></script>
+    <title>Pizza FearTheBackend</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kalam:wght@300;400;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root">
+      <div class="header">
+        <div class="h-img"></div>
+        <div class="vespa-logo">
+          <div class="vl-circle"></div>
+          <div class="vl-img"></div>
+          <div class="vl-teamtext">
+            <span
+              >© team <br />
+              FearTheBackend</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="c-title">
+          <h1 class="title">Buongiorno!</h1>
+          <h2 class="title-text">We deliver the best pizzas to your home</h2>
+        </div>
+        <div class="c-menu">
+        </div>
+        <div class="c-order">
+          <div class="co-bar">
+            <h1>Your order</h1>
+            <hr />
+            <div class="order-pizza" id="op"></div>
+            <hr />
+            <h2>Total:</h2>
+            <h4 class="orderSum">0 $</h4>
+            <h3>free delivery on planet Earth</h5>
+            <button class="place-order">PLACE ORDER</button>
+            <h5>or</h5>
+            <div class="del-button-field">
+              <button class="del-order"></button>
+            </div>
+          </div>
+        </div>
+        <div class="c-delivery">
+          <h1 class="title">Where to go?</h1>
+          <div class="cd-input">
+            <form class="input-name">
+              <label for="name">Name:</label><br />
+              <input type="text" name="name" id="name" />
+            </form>
+
+            <form class="input-phone">
+              <label for="phone">Phone:</label><br />
+              <input type="number" name="phone" id="phone" />
+            </form>
+
+            <form class="input-zip">
+              <label for="zip">ZIP code:</label><br />
+              <input type="number" name="zip" id="zip" />
+            </form>
+
+            <form class="input-city">
+              <label for="city">City:</label><br />
+              <input type="text" name="city" id="city" />
+            </form>
+
+            <form class="input-street">
+              <label for="street">Street:</label><br />
+              <input type="text" name="street" id="street" />
+            </form>
+
+            <form class="input-house">
+              <label for="house">House Nr.:</label><br />
+              <input type="number" name="house" id="house" />
+            </form>
+          </div>
+          <div class="cd-button-field">
+            <button class="go-button">GO,<br> Avanti!
+                <div class="vespa-mini"></div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="order-done-backg">
+      <div class="order-done">
+        <h1>Grazie!</h1>
+        <h2>Your pizza is already burning!</h2>
+        <div class="od-img"></div>
+        <button class=reload>Go back to the kitchen!</button>
+    </div>
+  </div>
+    </div>
+  </body>
+</html>

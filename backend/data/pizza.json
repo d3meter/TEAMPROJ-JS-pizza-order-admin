@@ -1,0 +1,76 @@
+[
+    {
+        "id": "1",
+        "name": "Primavera",
+        "ingredients": [
+            "Fior di latte cheese",
+            "Zucchini",
+            "Eggplant",
+            "Roasted peppers",
+            "Caramelized onions"
+        ],
+        "price": "20",
+        "active": "true"
+    },
+    {
+        "id": "2",
+        "name": "Prosciutto",
+        "ingredients": [
+            "Tomato sauce",
+            "Fior di latte cheese",
+            "Prosciutto",
+            "Arugula",
+            "Parmigiano Reggiano"
+        ],
+        "price": "20",
+        "active": "true"
+    },
+    {
+        "id": "3",
+        "name": "Salami",
+        "ingredients": [
+            "Tomato sauce",
+            "Fior di latte cheese",
+            "Salami"
+        ],
+        "price": "22",
+        "active": "true"
+    },
+    {
+        "id": "4",
+        "name": "Margherita",
+        "ingredients": [
+            "Tomato sauce",
+            "Fior di latte cheese",
+            "Fresh basil"
+        ],
+        "price": "21",
+        "active": "true"
+    },
+    {
+        "id": "5",
+        "name": "Capricciosa",
+        "ingredients": [
+            "Tomato sauce",
+            "Fior di latte cheese",
+            "Prosciutto cotto",
+            "Black olives",
+            "Artichokes",
+            "Mushrooms"
+        ],
+        "price": "22",
+        "active": "true"
+    },
+    {
+        "id": "6",
+        "name": "Patata",
+        "ingredients": [
+            "Potatoes",
+            "Fior di latte cheese",
+            "Pancetta",
+            "Caramelized onions"
+        ],
+        "price": "22",
+        "active": "true"
+    }
+]
